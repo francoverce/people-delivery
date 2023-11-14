@@ -66,7 +66,7 @@ class TripService {
                 EventTrip(
                     exchange = "new_trips",
                     message = MessageNewTrip(
-                        idViaje = it.id,
+                        idViaje = trip.id,
                         nombre = it.name ?: "",
                         apellido = it.lastName ?: "",
                         date = trip.created_at,
