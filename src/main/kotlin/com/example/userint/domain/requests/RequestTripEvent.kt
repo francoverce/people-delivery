@@ -4,7 +4,7 @@ import java.time.LocalDateTime
 
 data class AcceptedTrip(
     val idViaje: Long,
-    val idChofer: Long,
+    val idChofer: String,
     val nombreChofer: String,
     val apellidoChofer: String,
     val vehiculo: String,
@@ -15,7 +15,7 @@ data class AcceptedTrip(
 
 data class OnGoingTrip(
     val idViaje: Long,
-    val idChofer: Long,
+    val idChofer: String,
     val isStarted: Boolean,
     val date: LocalDateTime
 )

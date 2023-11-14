@@ -72,7 +72,7 @@ class JWTTripController {
         request: HttpServletRequest,
         @RequestBody event: AcceptedTrip
     ): ResponseEntity<Unit> {
-        return ResponseEntity(tripService.acceptedTrip(event), HttpStatus.OK)    }
+        return ResponseEntity(tripService.acceptedTrip(event), HttpStatus.OK) }
 
     @PostMapping("ongoing/events")
     fun ongoinTrip(
@@ -81,7 +81,7 @@ class JWTTripController {
     ): ResponseEntity<Unit> {
         return ResponseEntity(tripService.ongoinTrip(event), HttpStatus.OK)    }
 
-    @PostMapping("ongoing/events")
+    @PostMapping("closed/events")
     fun closedTrip(
         request: HttpServletRequest,
         @RequestBody event: ClosedTrip

@@ -6,7 +6,5 @@ import java.util.*
 
 interface ReviewsRepository : JpaRepository<Reviews, Long> {
 
-    fun findByRestaurantCode(restaurantCode: UUID): List<Reviews>?
 
-    fun findByUserCode(restaurantCode: UUID): List<Reviews?>
 }

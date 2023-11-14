@@ -1,5 +1,6 @@
 package com.example.userint.v1
 
+import com.example.userint.domain.model.UpdateTicket
 import com.example.userint.domain.requests.ClaimDTO
 import com.example.userint.domain.requests.ClaimReponse
 import com.example.userint.domain.requests.toClaimReponse
@@ -12,6 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.beans.factory.annotation.Qualifier
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
+import org.springframework.messaging.simp.SimpMessageSendingOperations
 import org.springframework.security.access.prepost.PreAuthorize
 import org.springframework.web.bind.annotation.*
 import java.util.*
@@ -29,6 +31,9 @@ class JWTClaimsController {
     @Autowired
     @Qualifier("jwtHeaderTokenExtractor")
     lateinit var tokenExtractor: ITokenExtractor
+
+    @Autowired
+    lateinit var messagingTemplate: SimpMessageSendingOperations
 
     @PreAuthorize("hasRole('USER')")
     @PostMapping("/create")
@@ -66,4 +71,11 @@ class JWTClaimsController {
         }
         return ResponseEntity(claimService.getClaims(userCode!!).map { it?.toClaimReponse() }, HttpStatus.OK)
     }
+
+    @PostMapping("claim/events")
+    fun updateClaim(
+        request: HttpServletRequest,
+        @RequestBody event: UpdateTicket
+    ): ResponseEntity<Unit> {
+        return ResponseEntity(claimService.updateClaim(event), HttpStatus.OK) }
 }

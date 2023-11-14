@@ -51,11 +51,4 @@ class JwtReviewsControllerV1 {
         return ResponseEntity(reviewsService.createReview(userCode!!, createReviewsRequest), HttpStatus.OK)
     }
 
-    @CrossOrigin
-    @GetMapping
-    @ApiOperation(value = "Crea una review de un chofer por usuario")
-    fun getReviewByOrgCode(
-        request: HttpServletRequest,
-        @RequestHeader(value = "x-chofer-code", required = true) restaurantCode: UUID,
-    ) = reviewsService.getReviewsByRestaurantCode(restaurantCode)
 }

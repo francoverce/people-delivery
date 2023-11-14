@@ -89,6 +89,8 @@ class TripService {
         if (trip.isPresent) {
             val viaje = trip.get()
             viaje.status = status
+            viaje.code = viaje.code
+            viaje.id = viaje.id
             viaje.updated_at = Instant.now()
             if (status == (Estado.CANCELLED_BEFORE_REQUESTING_DRIVER.name)) {
                 coreClient.sendPostRequest(
@@ -145,6 +147,7 @@ class TripService {
                     id = it.get().id,
                     since = it.get().since,
                     from = it.get().from,
+                    code = it.get().code,
                     distancia = it.get().distancia,
                     userId = it.get().userId,
                     created_at = it.get().created_at,
@@ -172,6 +175,7 @@ class TripService {
                     since = it.get().since,
                     from = it.get().from,
                     distancia = it.get().distancia,
+                    code= it.get().code,
                     userId = it.get().userId,
                     updated_at = Instant.now(),
                     is_finished = it.get().is_finished,
@@ -196,6 +200,7 @@ class TripService {
                     since = it.get().since,
                     from = it.get().from,
                     distancia = it.get().distancia,
+                    code= it.get().code,
                     userId = it.get().userId,
                     updated_at = Instant.now(),
                     is_finished = true,
@@ -209,4 +214,7 @@ class TripService {
         val novedad = "El viaje con ID ${event.idViaje} ha sido finalizado"
         messagingTemplate.convertAndSend("/topic/novedad", novedad)
     }
+
+    @Transactional
+    fun getTripByCode(tripCode: UUID): Trips? = tripRepository.findByCode(tripCode)
 }

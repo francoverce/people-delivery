@@ -3,11 +3,12 @@ package com.example.userint.domain.requests
 import com.example.userint.domain.entities.Claim
 import java.time.ZoneId
 import java.time.format.DateTimeFormatter
+import java.util.*
 
 
 data class ClaimDTO(
     val driverName : String?,
-    val tripCode : String,
+    val tripCode : UUID,
     val title: String,
     val description: String,
 )
