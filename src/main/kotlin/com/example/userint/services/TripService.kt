@@ -42,6 +42,7 @@ class TripService {
         EN_CAMINO,
         INICIADO,
         FINALIZADO,
+        BUSCANDO_CHOFER
     }
 
     @Transactional
@@ -55,7 +56,7 @@ class TripService {
                     userId = it,
                     created_at = Instant.now(),
                     is_finished = false,
-                    status = Estado.SIMULADO.name,
+                    status = Estado.BUSCANDO_CHOFER.name,
                     driverId = null,
                     paymentType = trip.paymentMethod ?: "not-defined",
                     precio = trip.distance * 300F,
@@ -69,7 +70,7 @@ class TripService {
                         nombre = it.name ?: "",
                         apellido = it.lastName ?: "",
                         date = trip.created_at,
-                        estadoViaje = Estado.SIMULADO.name,
+                        estadoViaje = Estado.BUSCANDO_CHOFER.name,
                         puntoPartida = trip.from!!,
                         puntoLlegada = trip.since,
                         isMovilidadReducida = trip.isMobilityReduce,
