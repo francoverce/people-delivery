@@ -35,7 +35,8 @@ class CardsService  {
         coreClient.sendPostRequest(eventUserData)
     }
 
-    private fun saveCardForUser(card: CardsDTO, user: Users): Cards {
+    @Transactional
+    fun saveCardForUser(card: CardsDTO, user: Users): Cards {
         return cardsRepository.save(
             Cards(
                 cardNumber = card.cardNumber,

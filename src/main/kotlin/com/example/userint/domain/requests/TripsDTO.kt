@@ -6,3 +6,10 @@ data class TripsDTO(
     val distance: Float,
     val paymentMethod: String?,
 )
+
+data class NewTripDTO(
+    val paymentMethod: String,
+    val numberTarjeta: String?,
+    val isMobilityReduce: Boolean,
+
+)

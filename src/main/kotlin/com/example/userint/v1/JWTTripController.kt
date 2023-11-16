@@ -7,7 +7,6 @@ import com.example.userint.jwt.JwtTokenUtil
 import com.example.userint.services.TripService
 import io.swagger.annotations.Api
 import model.GenericUtils
-import org.json.JSONObject
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.beans.factory.annotation.Qualifier
 import org.springframework.http.HttpStatus
@@ -31,8 +30,8 @@ class JWTTripController {
     lateinit var tokenExtractor: ITokenExtractor
 
     @PreAuthorize("hasRole('USER')")
-    @PostMapping("/create")
-    fun createTrip(
+    @PostMapping("/simulate")
+    fun simulateTrip(
         request: HttpServletRequest,
         @RequestBody trip: TripsDTO): ResponseEntity<Trips> {
         var userCode: UUID? = null
@@ -45,7 +44,26 @@ class JWTTripController {
                 userCode = UUID.fromString(GenericUtils.getValueFromKeyValue(claims, "userCode").toString())
             }
         }
-        return ResponseEntity(tripService.step1(trip, userCode!!), HttpStatus.CREATED)
+        return ResponseEntity(tripService.simulateTrip(trip, userCode!!), HttpStatus.CREATED)
+    }
+
+    @PreAuthorize("hasRole('USER')")
+    @PostMapping("/create/{code}")
+    fun createTrip(
+        request: HttpServletRequest,
+        @RequestBody newTripDTO: NewTripDTO,
+        @PathVariable("code") code: UUID): ResponseEntity<Trips> {
+        var userCode: UUID? = null
+
+        val tokenPayload = tokenExtractor.Extract(request.getHeader(JwtTokenUtil.TOKEN_HEADER))
+        val claims = tokenExtractor.ReadToken(tokenPayload)
+
+        if (!claims.isNullOrEmpty()) {
+            if (GenericUtils.getValueFromKeyValue(claims, "userCode") != null) {
+                userCode = UUID.fromString(GenericUtils.getValueFromKeyValue(claims, "userCode").toString())
+            }
+        }
+        return ResponseEntity(tripService.newTrip(userCode!!,code, newTripDTO), HttpStatus.CREATED)
     }
 
     @PreAuthorize("hasRole('USER')")
