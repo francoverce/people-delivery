@@ -59,7 +59,7 @@ class CardsController {
                     userCode = UUID.fromString(GenericUtils.getValueFromKeyValue(claims, "userCode").toString())
                 }
             }
-        return  ResponseEntity(cardsService.getCardByUserCode(userCode!!), HttpStatus.CREATED)
+        return  ResponseEntity(cardsService.getCardByUserCode(userCode!!), HttpStatus.OK)
 
     }
 
@@ -76,7 +76,7 @@ class CardsController {
                 userCode = UUID.fromString(GenericUtils.getValueFromKeyValue(claims, "userCode").toString())
             }
         }
-        return  ResponseEntity(cardsService.updateCard(userCode, updatedCard), HttpStatus.CREATED)
+        return  ResponseEntity(cardsService.updateCard(userCode, updatedCard), HttpStatus.OK)
 
     }
 

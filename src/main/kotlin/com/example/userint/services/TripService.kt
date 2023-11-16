@@ -4,10 +4,7 @@ import com.example.userint.client.CoreClient
 import com.example.userint.domain.entities.Drivers
 import com.example.userint.domain.entities.Trips
 import com.example.userint.domain.model.*
-import com.example.userint.domain.requests.AcceptedTrip
-import com.example.userint.domain.requests.ClosedTrip
-import com.example.userint.domain.requests.OnGoingTrip
-import com.example.userint.domain.requests.TripsDTO
+import com.example.userint.domain.requests.*
 import com.example.userint.repositories.sql.DriverRepository
 import com.example.userint.repositories.sql.TripRepository
 import org.springframework.beans.factory.annotation.Autowired
@@ -42,12 +39,13 @@ class TripService {
         EN_CAMINO,
         INICIADO,
         FINALIZADO,
+        BUSCANDO_CHOFER
     }
 
     @Transactional
-    fun step1(trip: TripsDTO, userCode: UUID): Trips {
+    fun simulateTrip(trip: TripsDTO, userCode: UUID): Trips {
         userService.getUser(userCode).let {
-            val trip = tripRepository.save(
+            return tripRepository.save(
                 Trips(
                     since = trip.since,
                     from = trip.from,
@@ -61,15 +59,29 @@ class TripService {
                     precio = trip.distance * 300F,
                 )
             )
+        }
+    }
+    @Transactional
+    fun newTrip(userCode: UUID, tripCode: UUID, newTripDTO: NewTripDTO): Trips {
+        userService.getUser(userCode).let {
+           val trip = tripRepository.findByCode(tripCode).let { trip ->
+               trip!!.status = Estado.BUSCANDO_CHOFER.name
+               trip.paymentType = newTripDTO.paymentMethod
+               trip.isMobilityReduce = newTripDTO.isMobilityReduce
+               trip.updated_at = Instant.now()
+               tripRepository.save(
+                   trip
+               )
+           }
             coreClient.sendPostRequest(
                 EventTrip(
                     exchange = "new_trips",
                     message = MessageNewTrip(
-                        idViaje = it.id,
+                        idViaje = trip.id,
                         nombre = it.name ?: "",
                         apellido = it.lastName ?: "",
                         date = trip.created_at,
-                        estadoViaje = Estado.SIMULADO.name,
+                        estadoViaje = Estado.BUSCANDO_CHOFER.name,
                         puntoPartida = trip.from!!,
                         puntoLlegada = trip.since,
                         isMovilidadReducida = trip.isMobilityReduce,
@@ -83,6 +95,7 @@ class TripService {
         }
     }
 
+
     @Transactional
     fun cancelTrip(code: UUID, status: String, userCode: UUID): Trips? {
         val trip = tripRepository.findByCodeAndUserId_Code(code, userCode)
@@ -91,6 +104,7 @@ class TripService {
             viaje.status = status
             viaje.code = viaje.code
             viaje.id = viaje.id
+            viaje.is_cancel = true
             viaje.updated_at = Instant.now()
             if (status == (Estado.CANCELLED_BEFORE_REQUESTING_DRIVER.name)) {
                 coreClient.sendPostRequest(
