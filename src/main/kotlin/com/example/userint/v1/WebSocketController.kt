@@ -14,7 +14,7 @@ class WebSocketController{
     @Autowired
     private lateinit var messagingTemplate: SimpMessageSendingOperations
 
-    @MessageMapping("/sendUpdate")
+    @MessageMapping("/accepted_trips")
     @SendTo("/topic/update")
     fun sendUpdate(message: String): String {
 
