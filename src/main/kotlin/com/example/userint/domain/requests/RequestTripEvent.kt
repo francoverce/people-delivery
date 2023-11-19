@@ -23,5 +23,5 @@ data class OnGoingTrip(
 data class ClosedTrip(
     val idViaje: Long,
     val status: String,
-    val finishTimestmap: LocalDateTime
+    val finishTimestamp: String
 )
