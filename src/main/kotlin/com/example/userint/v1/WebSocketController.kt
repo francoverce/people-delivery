@@ -1,7 +1,5 @@
 package com.example.userint.v1
 
-import org.slf4j.Logger
-import org.slf4j.LoggerFactory
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.messaging.handler.annotation.MessageMapping
 import org.springframework.messaging.handler.annotation.SendTo
@@ -23,7 +21,7 @@ class WebSocketController{
         val notification = "Nueva notificación: $message"
         
         messagingTemplate.convertAndSend("/topic/update", notification)
-        logger.info(notification)
+        
         return notification
     }
 }
