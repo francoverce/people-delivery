@@ -24,13 +24,4 @@ class WebSocketController{
 
         return notification
     }
-
-    @MessageMapping("/accepted_trips")
-    fun handleAcceptedTrip(@Payload message: TripMessage) {
-        val notification = "Nueva notificación: $message"
-
-        messagingTemplate.convertAndSend("/topic/chofer_accepted", notification)
-
-        return notification
-    }
 }

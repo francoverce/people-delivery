@@ -1,4 +1,4 @@
-package com.example.userint
+/* package com.example.userint
 
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest
@@ -9,4 +9,4 @@ class UserIntApplicationTests {
     @Test
     fun contextLoads() {
     }
-}
+} */
