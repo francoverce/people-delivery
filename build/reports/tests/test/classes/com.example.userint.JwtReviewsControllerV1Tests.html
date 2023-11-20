@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - JwtReviewsControllerV1Tests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>JwtReviewsControllerV1Tests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.example.userint.html">com.example.userint</a> &gt; JwtReviewsControllerV1Tests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">2.664s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">createReviewSuccessful()</td>
+<td class="success">2.664s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2023-11-20 19:47:54.762  INFO 70631 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.userint.JwtReviewsControllerV1Tests], using SpringBootContextLoader
+2023-11-20 19:47:54.763  INFO 70631 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.example.userint.JwtReviewsControllerV1Tests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2023-11-20 19:47:54.764  INFO 70631 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.userint.JwtReviewsControllerV1Tests]: JwtReviewsControllerV1Tests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-11-20 19:47:54.765  INFO 70631 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.userint.UserIntApplication for test class com.example.userint.JwtReviewsControllerV1Tests
+2023-11-20 19:47:54.767  INFO 70631 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2023-11-20 19:47:54.768  INFO 70631 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3094b465, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@16454a28, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@4970b93d, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@2c43da32, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@39e16443, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5c97d5d, org.springframework.test.context.transaction.TransactionalTestExecutionListener@49bc9588, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7b9c54c7, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@496de48b, org.springframework.test.context.event.EventPublishingTestExecutionListener@7005b6e, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@2a3d9ed3, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@339ecd3f, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@15f12e7b, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@102fcc80, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@56221350, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@1390db9e, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@f0ead61]
+Hibernate: select trips0_.id as id1_4_, trips0_.code as code2_4_, trips0_.created_at as created_3_4_, trips0_.distancia as distanci4_4_, trips0_.drivers_id as drivers14_4_, trips0_.from_trip as from_tri5_4_, trips0_.is_mobility_reduce as is_mobil6_4_, trips0_.is_cancel as is_cance7_4_, trips0_.is_finished as is_finis8_4_, trips0_.payment_type as payment_9_4_, trips0_.precio as precio10_4_, trips0_.since_trip as since_t11_4_, trips0_.status as status12_4_, trips0_.updated_at as updated13_4_, trips0_.users_id as users_i15_4_ from trips trips0_ where trips0_.code=?
+Hibernate: select drivers0_.id as id1_2_0_, drivers0_.car as car2_2_0_, drivers0_.created_at as created_3_2_0_, drivers0_.date_come as date_com4_2_0_, drivers0_.full_name as full_nam5_2_0_, drivers0_.icon as icon6_2_0_, drivers0_.id_chofer as id_chofe7_2_0_, drivers0_.patent as patent8_2_0_, drivers0_.updated_at as updated_9_2_0_ from drivers drivers0_ where drivers0_.id=?
+Hibernate: select users0_.id as id1_5_0_, users0_.adress as adress2_5_0_, users0_.code as code3_5_0_, users0_.created_at as created_4_5_0_, users0_.date_validationotp as date_val5_5_0_, users0_.email as email6_5_0_, users0_.favorites as favorite7_5_0_, users0_.icon as icon8_5_0_, users0_.last_name as last_nam9_5_0_, users0_.name as name10_5_0_, users0_.otp_code as otp_cod11_5_0_, users0_.password as passwor12_5_0_, users0_.phone as phone13_5_0_, users0_.rol as rol14_5_0_, users0_.updated_at as updated15_5_0_, users0_.user_name as user_na16_5_0_ from users users0_ where users0_.id=?
+Hibernate: insert into reviews (created_at, driver_id, rating, trip_code) values (?, ?, ?, ?)
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.2.1</a> at 20 nov. 2023 19:48:04</p>
+</div>
+</div>
+</body>
+</html>

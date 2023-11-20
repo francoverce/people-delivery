@@ -1,10 +1,8 @@
 package com.example.userint.domain.requests
 
-import java.time.LocalDateTime
-
 data class AcceptedTrip(
-    val idViaje: String,
-    val idChofer: String,
+    val idViaje: Long,
+    val idChofer: Long,
     val nombreChofer: String,
     val apellidoChofer: String,
     val vehiculo: String,
@@ -14,14 +12,14 @@ data class AcceptedTrip(
 
 
 data class OnGoingTrip(
-    val idViaje: String,
-    val idChofer: String,
+    val idViaje: Long,
+    val idChofer: Long,
     val isStarted: Boolean,
     val date: String
 )
 
 data class ClosedTrip(
-    val idViaje: String,
+    val idViaje: Long,
     val status: String,
     val finishTimestamp: String
 )

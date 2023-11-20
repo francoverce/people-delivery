@@ -5,5 +5,5 @@ import java.util.*
 data class   CreateReviewsRequest(
     val tripCode: UUID,
     val rating: Int,
-    val driverId: String
+    val driverId: Long
 )

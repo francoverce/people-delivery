@@ -17,7 +17,7 @@ open class Reviews(
     open var tripCode: UUID,
 
     @Column(name = "driver_id")
-    open var driverId: String,
+    open var driverId: Long,
 
     @Column(name = "rating")
     open var rating: Int,

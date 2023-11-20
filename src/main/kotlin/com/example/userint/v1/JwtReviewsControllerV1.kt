@@ -50,5 +50,4 @@ class JwtReviewsControllerV1 {
         }
         return ResponseEntity(reviewsService.createReview(userCode!!, createReviewsRequest), HttpStatus.OK)
     }
-
 }

@@ -17,7 +17,7 @@ open class Drivers(
     open var id: Long = 0,
 
     @Column(name = "id_chofer", nullable = false)
-    open var idChofer: String,
+    open var idChofer: Long,
 
     @Column(name = "full_name")
     open var fullName: String? = null,

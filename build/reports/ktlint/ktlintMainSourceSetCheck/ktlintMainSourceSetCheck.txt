@@ -1,3 +1,104 @@
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/client/[0mCoreClient.kt[90m:[0m31[90m:52:[0m Missing spacing after ","
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/client/[0mCoreClient.kt[90m:[0m36[90m:1:[0m Needless blank line(s)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/config/[0mWebSecurityConfig.kt[90m:[0m54[90m:72:[0m Unnecessary semicolon
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/config/[0mWebSocketConfig.kt[90m:[0m1[90m:1:[0m class WebSocketConfiguration should be declared in a file named WebSocketConfiguration.kt
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/domain/entities/[0mCards.kt[90m:[0m4[90m:1:[0m Unused import
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/domain/entities/[0mCards.kt[90m:[0m6[90m:1:[0m Unused import
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/domain/entities/[0mCards.kt[90m:[0m36[90m:1:[0m Unexpected indentation (4) (should be 0)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/domain/entities/[0mCards.kt[90m:[0m36[90m:5:[0m Unexpected indentation (expected 0, actual 4)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/domain/entities/[0mClaim.kt[90m:[0m4[90m:1:[0m Unused import
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/domain/entities/[0mClaim.kt[90m:[0m50[90m:1:[0m Unexpected indentation (4) (should be 0)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/domain/entities/[0mClaim.kt[90m:[0m50[90m:5:[0m Unexpected indentation (expected 0, actual 4)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/domain/entities/[0mClaim.kt[90m:[0m52[90m:1:[0m Needless blank line(s)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/domain/entities/[0mDrivers.kt[90m:[0m43[90m:1:[0m Unexpected indentation (4) (should be 0)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/domain/entities/[0mDrivers.kt[90m:[0m43[90m:5:[0m Unexpected indentation (expected 0, actual 4)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/domain/entities/[0mTrips.kt[90m:[0m4[90m:1:[0m Unused import
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/domain/entities/[0mTrips.kt[90m:[0m63[90m:1:[0m Unexpected indentation (4) (should be 0)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/domain/entities/[0mTrips.kt[90m:[0m63[90m:5:[0m Unexpected indentation (expected 0, actual 4)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/domain/entities/[0mTrips.kt[90m:[0m65[90m:1:[0m Needless blank line(s)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/domain/mappers/[0mCardsMapper.kt[90m:[0m4[90m:1:[0m Unused import
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/domain/mappers/[0mCardsMapper.kt[90m:[0m6[90m:1:[0m Unused import
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/domain/mappers/[0mCardsMapper.kt[90m:[0m11[90m:1:[0m Unexpected indentation (8) (should be 12)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/domain/mappers/[0mCardsMapper.kt[90m:[0m12[90m:1:[0m Unexpected indentation (8) (should be 12)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/domain/mappers/[0mCardsMapper.kt[90m:[0m13[90m:1:[0m Unexpected indentation (8) (should be 12)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/domain/mappers/[0mCardsMapper.kt[90m:[0m13[90m:27:[0m Missing spacing before "="
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/domain/mappers/[0mCardsMapper.kt[90m:[0m14[90m:1:[0m Unexpected indentation (8) (should be 12)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/domain/mappers/[0mCardsMapper.kt[90m:[0m14[90m:16:[0m Missing spacing before "="
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/domain/model/[0mEventTrip.kt[90m:[0m1[90m:1:[0m File must end with a newline (\n)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/domain/model/[0mEventTrip.kt[90m:[0m7[90m:21:[0m Unexpected spacing before "("
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/domain/model/[0mEventTrip.kt[90m:[0m8[90m:18:[0m Missing spacing after ":"
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/domain/model/[0mEventTrip.kt[90m:[0m27[90m:1:[0m Needless blank line(s)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/domain/model/[0mEventTrip.kt[90m:[0m28[90m:57:[0m Unexpected spacing before "("
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/domain/model/[0mEventTrip.kt[90m:[0m29[90m:18:[0m Missing spacing after ":"
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/domain/model/[0mEventTrip.kt[90m:[0m47[90m:1:[0m Needless blank line(s)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/domain/model/[0mEventTrip.kt[90m:[0m48[90m:56:[0m Unexpected spacing before "("
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/domain/model/[0mEventTrip.kt[90m:[0m49[90m:18:[0m Missing spacing after ":"
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/domain/model/[0mEventUser.kt[90m:[0m1[90m:1:[0m File must end with a newline (\n)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/domain/model/[0mEventUser.kt[90m:[0m3[90m:28:[0m Unexpected spacing before "("
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/domain/model/[0mEventUser.kt[90m:[0m4[90m:18:[0m Missing spacing after ":"
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/domain/model/[0mEventUser.kt[90m:[0m5[90m:17:[0m Missing spacing after ":"
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/domain/model/[0mEventUser.kt[90m:[0m8[90m:26:[0m Unexpected spacing before "("
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/domain/model/[0mEventUser.kt[90m:[0m18[90m:1:[0m Needless blank line(s)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/domain/model/[0mEventUser.kt[90m:[0m20[90m:31:[0m Unexpected spacing before "("
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/domain/model/[0mEventUser.kt[90m:[0m21[90m:18:[0m Missing spacing after ":"
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/domain/model/[0mEventUser.kt[90m:[0m22[90m:17:[0m Missing spacing after ":"
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/domain/model/[0mEventUser.kt[90m:[0m24[90m:29:[0m Unexpected spacing before "("
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/domain/model/[0mEventUser.kt[90m:[0m34[90m:1:[0m Needless blank line(s)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/domain/model/[0mEventUser.kt[90m:[0m36[90m:39:[0m Unexpected spacing before "("
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/domain/model/[0mEventUser.kt[90m:[0m37[90m:18:[0m Missing spacing after ":"
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/domain/model/[0mEventUser.kt[90m:[0m38[90m:17:[0m Missing spacing after ":"
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/domain/model/[0mEventUser.kt[90m:[0m40[90m:37:[0m Unexpected spacing before "("
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/domain/model/[0mEventUser.kt[90m:[0m48[90m:26:[0m Unexpected spacing before ":"
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/domain/model/[0mEventUser.kt[90m:[0m49[90m:20:[0m Unexpected spacing before ":"
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/domain/model/[0mEventUser.kt[90m:[0m49[90m:21:[0m Missing spacing after ":"
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/domain/model/[0mEventUser.kt[90m:[0m50[90m:28:[0m Unexpected spacing before ":"
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/domain/model/[0mEventUser.kt[90m:[0m50[90m:29:[0m Missing spacing after ":"
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/domain/model/[0mEventUser.kt[90m:[0m51[90m:32:[0m Unexpected spacing before ":"
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/domain/model/[0mEventUser.kt[90m:[0m51[90m:33:[0m Missing spacing after ":"
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/domain/model/[0mReviewsEvent.kt[90m:[0m6[90m:1:[0m Needless blank line(s)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/domain/model/[0mReviewsEvent.kt[90m:[0m7[90m:26:[0m Unexpected spacing before "("
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/domain/model/[0mReviewsEvent.kt[90m:[0m8[90m:18:[0m Missing spacing after ":"
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/domain/model/[0mReviewsEvent.kt[90m:[0m9[90m:17:[0m Missing spacing after ":"
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/domain/model/[0mReviewsEvent.kt[90m:[0m21[90m:1:[0m Needless blank line(s)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/domain/model/[0mticketEvent.kt[90m:[0m18[90m:26:[0m Unexpected spacing before "("
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/domain/model/[0mticketEvent.kt[90m:[0m19[90m:18:[0m Missing spacing after ":"
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/domain/model/[0mticketEvent.kt[90m:[0m20[90m:17:[0m Missing spacing after ":"
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/domain/model/[0mticketEvent.kt[90m:[0m36[90m:1:[0m Needless blank line(s)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/domain/model/[0mTokenRequest.kt[90m:[0m1[90m:1:[0m File must end with a newline (\n)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/domain/requests/[0mClaimDTO.kt[90m:[0m8[90m:1:[0m Needless blank line(s)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/domain/requests/[0mClaimDTO.kt[90m:[0m10[90m:20:[0m Unexpected spacing before ":"
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/domain/requests/[0mClaimDTO.kt[90m:[0m11[90m:18:[0m Unexpected spacing before ":"
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/domain/requests/[0mClaimDTO.kt[90m:[0m18[90m:18:[0m Unexpected spacing before ":"
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/domain/requests/[0mClaimDTO.kt[90m:[0m38[90m:1:[0m Needless blank line(s)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/domain/requests/[0mCreateReviewsRequest.kt[90m:[0m1[90m:1:[0m File must end with a newline (\n)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/domain/requests/[0mCreateReviewsRequest.kt[90m:[0m5[90m:12:[0m Unnecessary space(s)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/domain/requests/[0mRequestTripEvent.kt[90m:[0m3[90m:1:[0m Unused import
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/domain/requests/[0mRequestTripEvent.kt[90m:[0m15[90m:1:[0m Needless blank line(s)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/jwt/[0mJwtRequestStep1.kt[90m:[0m71[90m:1:[0m Needless blank line(s)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/jwt/[0mJwtRequestStep1.kt[90m:[0m83[90m:1:[0m Needless blank line(s)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/repositories/sql/[0mCardsRepository.kt[90m:[0m1[90m:1:[0m File must end with a newline (\n)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/repositories/sql/[0mCardsRepository.kt[90m:[0m3[90m:1:[0m Needless blank line(s)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/repositories/sql/[0mCardsRepository.kt[90m:[0m10[90m:55:[0m Missing spacing before "{"
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/repositories/sql/[0mCardsRepository.kt[90m:[0m11[90m:26:[0m Unexpected spacing before "("
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/repositories/sql/[0mCardsRepository.kt[90m:[0m13[90m:39:[0m Unexpected spacing before "("
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/repositories/sql/[0mCardsRepository.kt[90m:[0m13[90m:68:[0m Missing spacing after ":"
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/repositories/sql/[0mClaimRepository.kt[90m:[0m3[90m:1:[0m Needless blank line(s)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/repositories/sql/[0mClaimRepository.kt[90m:[0m5[90m:1:[0m Unused import
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/repositories/sql/[0mClaimRepository.kt[90m:[0m6[90m:1:[0m Unused import
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/repositories/sql/[0mClaimRepository.kt[90m:[0m15[90m:1:[0m Unexpected blank line(s) before "}"
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/repositories/sql/[0mClaimRepository.kt[90m:[0m16[90m:1:[0m Needless blank line(s)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/repositories/sql/[0mDriverRepository.kt[90m:[0m3[90m:1:[0m Needless blank line(s)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/repositories/sql/[0mDriverRepository.kt[90m:[0m9[90m:59:[0m Unnecessary block ("{}")
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/repositories/sql/[0mDriverRepository.kt[90m:[0m10[90m:1:[0m Unexpected blank line(s) before "}"
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/repositories/sql/[0mRegisterRepository.kt[90m:[0m3[90m:1:[0m Needless blank line(s)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/repositories/sql/[0mReviewsRepository.kt[90m:[0m7[90m:60:[0m Unnecessary block ("{}")
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/repositories/sql/[0mReviewsRepository.kt[90m:[0m8[90m:1:[0m Unexpected blank line(s) before "}"
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/repositories/sql/[0mReviewsRepository.kt[90m:[0m9[90m:1:[0m Needless blank line(s)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/repositories/sql/[0mTripRepository.kt[90m:[0m3[90m:1:[0m Needless blank line(s)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/repositories/sql/[0mTripRepository.kt[90m:[0m14[90m:1:[0m Unexpected blank line(s) before "}"
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/services/[0mCardsService.kt[90m:[0m17[90m:20:[0m Unnecessary space(s)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/services/[0mCardsService.kt[90m:[0m74[90m:1:[0m Needless blank line(s)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/services/[0mCardsService.kt[90m:[0m90[90m:86:[0m Missing spacing after ","
 [90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/services/[0mClaimService.kt[90m:[0m5[90m:1:[0m Unused import
 [90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/services/[0mClaimService.kt[90m:[0m9[90m:1:[0m Unused import
 [90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/services/[0mClaimService.kt[90m:[0m17[90m:1:[0m Unused import
@@ -40,6 +141,80 @@
 [90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/services/[0mClaimService.kt[90m:[0m71[90m:19:[0m Unnecessary space(s)
 [90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/services/[0mClaimService.kt[90m:[0m82[90m:15:[0m Missing spacing after "if"
 [90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/services/[0mClaimService.kt[90m:[0m82[90m:29:[0m Missing spacing before "{"
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/services/[0mNovedadService.kt[90m:[0m1[90m:1:[0m File must end with a newline (\n)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/services/[0mRegisterService.kt[90m:[0m32[90m:1:[0m Unexpected indentation (10) (should be 12)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/services/[0mRegisterService.kt[90m:[0m51[90m:1:[0m Unexpected indentation (20) (should be 24)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/services/[0mRegisterService.kt[90m:[0m52[90m:1:[0m Unexpected indentation (20) (should be 24)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/services/[0mRegisterService.kt[90m:[0m53[90m:1:[0m Unexpected indentation (20) (should be 24)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/services/[0mRegisterService.kt[90m:[0m54[90m:1:[0m Unexpected indentation (20) (should be 24)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/services/[0mRegisterService.kt[90m:[0m55[90m:1:[0m Unexpected indentation (20) (should be 24)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/services/[0mRegisterService.kt[90m:[0m56[90m:1:[0m Unexpected indentation (20) (should be 24)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/services/[0mRegisterService.kt[90m:[0m57[90m:1:[0m Unexpected indentation (20) (should be 24)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/services/[0mRegisterService.kt[90m:[0m58[90m:1:[0m Unexpected indentation (17) (should be 20)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/services/[0mRegisterService.kt[90m:[0m59[90m:1:[0m Unexpected indentation (14) (should be 16)
 [90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/services/[0mReviewsService.kt[90m:[0m11[90m:1:[0m Unused import
 [90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/services/[0mReviewsService.kt[90m:[0m12[90m:1:[0m Unused import
 [90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/services/[0mReviewsService.kt[90m:[0m30[90m:1:[0m Needless blank line(s)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/services/[0mReviewsService.kt[90m:[0m49[90m:1:[0m Unexpected indentation (20) (should be 16)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/services/[0mReviewsService.kt[90m:[0m50[90m:1:[0m Unexpected indentation (16) (should be 12)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/services/[0mReviewsService.kt[90m:[0m51[90m:1:[0m Unexpected indentation (12) (should be 8)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/services/[0mTripService.kt[90m:[0m11[90m:1:[0m Unused import
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/services/[0mTripService.kt[90m:[0m16[90m:1:[0m Unused import
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/services/[0mTripService.kt[90m:[0m70[90m:1:[0m Unexpected indentation (11) (should be 12)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/services/[0mTripService.kt[90m:[0m71[90m:1:[0m Unexpected indentation (15) (should be 16)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/services/[0mTripService.kt[90m:[0m72[90m:1:[0m Unexpected indentation (15) (should be 16)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/services/[0mTripService.kt[90m:[0m73[90m:1:[0m Unexpected indentation (15) (should be 16)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/services/[0mTripService.kt[90m:[0m74[90m:1:[0m Unexpected indentation (15) (should be 16)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/services/[0mTripService.kt[90m:[0m75[90m:1:[0m Unexpected indentation (15) (should be 16)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/services/[0mTripService.kt[90m:[0m76[90m:1:[0m Unexpected indentation (19) (should be 20)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/services/[0mTripService.kt[90m:[0m77[90m:1:[0m Unexpected indentation (15) (should be 16)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/services/[0mTripService.kt[90m:[0m78[90m:1:[0m Unexpected indentation (11) (should be 12)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/services/[0mTripService.kt[90m:[0m102[90m:1:[0m Needless blank line(s)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/services/[0mTripService.kt[90m:[0m164[90m:1:[0m Needless blank line(s)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/services/[0mTripService.kt[90m:[0m165[90m:22:[0m Unnecessary space(s)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/services/[0mTripService.kt[90m:[0m165[90m:45:[0m Missing newline after "("
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/services/[0mTripService.kt[90m:[0m172[90m:9:[0m Missing newline before ")"
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/services/[0mTripService.kt[90m:[0m194[90m:51:[0m Unexpected spacing after "("
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/services/[0mTripService.kt[90m:[0m197[90m:1:[0m Needless blank line(s)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/services/[0mTripService.kt[90m:[0m207[90m:25:[0m Missing spacing before "="
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/services/[0mTripService.kt[90m:[0m219[90m:51:[0m Unexpected spacing after "("
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/services/[0mTripService.kt[90m:[0m222[90m:1:[0m Needless blank line(s)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/services/[0mTripService.kt[90m:[0m232[90m:25:[0m Missing spacing before "="
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/services/[0mTripService.kt[90m:[0m244[90m:51:[0m Unexpected spacing after "("
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/services/[0mUserService.kt[90m:[0m33[90m:1:[0m Needless blank line(s)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/v1/[0mJWTCardsController.kt[90m:[0m1[90m:1:[0m class CardsController should be declared in a file named CardsController.kt
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/v1/[0mJWTCardsController.kt[90m:[0m35[90m:35:[0m Missing newline before ")"
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/v1/[0mJWTCardsController.kt[90m:[0m35[90m:36:[0m Missing newline before ")"
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/v1/[0mJWTCardsController.kt[90m:[0m52[90m:1:[0m Unexpected indentation (12) (should be 8)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/v1/[0mJWTCardsController.kt[90m:[0m54[90m:1:[0m Unexpected indentation (12) (should be 8)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/v1/[0mJWTCardsController.kt[90m:[0m55[90m:1:[0m Unexpected indentation (12) (should be 8)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/v1/[0mJWTCardsController.kt[90m:[0m57[90m:1:[0m Unexpected indentation (12) (should be 8)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/v1/[0mJWTCardsController.kt[90m:[0m58[90m:1:[0m Unexpected indentation (16) (should be 12)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/v1/[0mJWTCardsController.kt[90m:[0m59[90m:1:[0m Unexpected indentation (20) (should be 16)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/v1/[0mJWTCardsController.kt[90m:[0m60[90m:1:[0m Unexpected indentation (16) (should be 12)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/v1/[0mJWTCardsController.kt[90m:[0m61[90m:1:[0m Unexpected indentation (12) (should be 8)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/v1/[0mJWTCardsController.kt[90m:[0m62[90m:16:[0m Unnecessary space(s)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/v1/[0mJWTCardsController.kt[90m:[0m63[90m:1:[0m Unexpected blank line(s) before "}"
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/v1/[0mJWTCardsController.kt[90m:[0m79[90m:16:[0m Unnecessary space(s)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/v1/[0mJWTCardsController.kt[90m:[0m80[90m:1:[0m Unexpected blank line(s) before "}"
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/v1/[0mJWTCardsController.kt[90m:[0m87[90m:40:[0m Missing newline before ")"
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/v1/[0mJWTCardsController.kt[90m:[0m87[90m:41:[0m Missing newline before ")"
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/v1/[0mJWTCardsController.kt[90m:[0m97[90m:16:[0m Unnecessary space(s)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/v1/[0mJWTCardsController.kt[90m:[0m97[90m:32:[0m Unexpected spacing after "("
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/v1/[0mJWTClaimsController.kt[90m:[0m80[90m:78:[0m Missing newline before "}"
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/v1/[0mJWTTripController.kt[90m:[0m36[90m:35:[0m Missing newline before ")"
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/v1/[0mJWTTripController.kt[90m:[0m36[90m:36:[0m Missing newline before ")"
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/v1/[0mJWTTripController.kt[90m:[0m55[90m:40:[0m Missing newline before ")"
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/v1/[0mJWTTripController.kt[90m:[0m55[90m:41:[0m Missing newline before ")"
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/v1/[0mJWTTripController.kt[90m:[0m66[90m:62:[0m Missing spacing after ","
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/v1/[0mJWTTripController.kt[90m:[0m74[90m:46:[0m Missing newline before ")"
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/v1/[0mJWTTripController.kt[90m:[0m74[90m:47:[0m Missing newline before ")"
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/v1/[0mJWTTripController.kt[90m:[0m85[90m:59:[0m Missing spacing after ","
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/v1/[0mJWTTripController.kt[90m:[0m93[90m:77:[0m Unnecessary space(s)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/v1/[0mJWTTripController.kt[90m:[0m93[90m:79:[0m Missing newline before "}"
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/v1/[0mJWTTripController.kt[90m:[0m100[90m:78:[0m Missing newline before "}"
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/v1/[0mJWTTripController.kt[90m:[0m107[90m:77:[0m Unnecessary space(s)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/v1/[0mJWTTripController.kt[90m:[0m107[90m:79:[0m Missing newline before "}"
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/v1/[0mJwtUserControllerV1.kt[90m:[0m118[90m:1:[0m Unexpected blank line(s) before "}"
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/v1/[0mRegisterControllerV1.kt[90m:[0m42[90m:1:[0m Needless blank line(s)
+[90m/Users/cristianescujuri/Desktop/user-int/src/main/kotlin/com/example/userint/v1/[0mWebSocketController.kt[90m:[0m1[90m:1:[0m File must end with a newline (\n)

@@ -14,7 +14,7 @@ data class MessageReviewEvent(
     val nombreUsuario: String,
     val idChofer: Long,
     val cantidadEstrellas: Int,
-    val idViaje: String,
+    val idViaje: Long,
     val fechaCalificacion: String = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm")),
 )
 

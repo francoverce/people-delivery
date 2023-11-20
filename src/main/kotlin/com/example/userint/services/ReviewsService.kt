@@ -42,13 +42,13 @@ class ReviewsService {
                 exchange = "new_review",
                 MessageReviewEvent(
                     idUsuario = trip!!.userId.id,
-                    nombreUsuario = trip!!.userId.name!!,
-                    idChofer = trip!!.driverId!!.idChofer.toLong(),
+                    nombreUsuario = trip.userId.name!!,
+                    idChofer = trip.driverId!!.idChofer,
                     cantidadEstrellas = createReviewsRequest.rating,
-                    idViaje = trip.id.toString(),
+                    idViaje = trip.id
+                    ),
                 )
             )
-        )
         return review
     }
 }

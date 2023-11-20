@@ -171,7 +171,7 @@ class TripService {
             icon = ""
         ))
 
-        tripRepository.findById(event.idViaje.toLong()).let {
+        tripRepository.findById(event.idViaje).let {
             tripRepository.save(
                 Trips(
                     id = it.get().id,
@@ -222,7 +222,7 @@ class TripService {
 
     @Transactional
     fun closedTrip(event: ClosedTrip) {
-        tripRepository.findById(event.idViaje.toLong()).let {
+        tripRepository.findById(event.idViaje).let {
             tripRepository.save(
                 Trips(
                     id = it.get().id,
