@@ -12,6 +12,9 @@ import org.springframework.messaging.simp.SimpMessageSendingOperations
 import org.springframework.stereotype.Service
 import org.springframework.transaction.annotation.Transactional
 import java.time.Instant
+import java.time.LocalDateTime
+import java.time.ZoneId
+import java.time.ZoneOffset
 import java.util.*
 
 @Service
@@ -146,16 +149,28 @@ class TripService {
 
     @Transactional
     fun acceptedTrip(event: AcceptedTrip) {
-       val driver =  driverRepository.save(Drivers(
+        val epochWithDecimal: Double = event.date.toDouble()
+
+        // Crear Instant con la parte entera (segundos)
+        val instant: Instant = Instant.ofEpochSecond(epochWithDecimal.toLong())
+
+        // Ajustar nanosegundos con la parte decimal
+        val adjustedInstant: Instant = instant.plusNanos(((epochWithDecimal - instant.epochSecond.toDouble()) * 1_000_000_000).toLong())
+
+        // Convertir a LocalDateTime
+        val localDateTime: LocalDateTime = LocalDateTime.ofInstant(adjustedInstant, ZoneOffset.UTC)
+
+
+        val driver =  driverRepository.save(Drivers(
             idChofer = event.idChofer,
             fullName = event.nombreChofer + " " + event.apellidoChofer,
             car = event.vehiculo,
             patent = event.patente,
-            dateCome = event.date,
+            dateCome = localDateTime,
             icon = ""
         ))
 
-        tripRepository.findById(event.idViaje).let {
+        tripRepository.findById(event.idViaje.toLong()).let {
             tripRepository.save(
                 Trips(
                     id = it.get().id,
@@ -178,11 +193,10 @@ class TripService {
         messagingTemplate.convertAndSend("/topic/novedad", novedad)
     }
 
-
-
+    
     @Transactional
     fun ongoinTrip(event: OnGoingTrip) {
-        tripRepository.findById(event.idViaje).let {
+        tripRepository.findById(event.idViaje.toLong()).let {
             tripRepository.save(
                 Trips(
                     id = it.get().id,
@@ -207,7 +221,7 @@ class TripService {
 
     @Transactional
     fun closedTrip(event: ClosedTrip) {
-        tripRepository.findById(event.idViaje).let {
+        tripRepository.findById(event.idViaje.toLong()).let {
             tripRepository.save(
                 Trips(
                     id = it.get().id,
