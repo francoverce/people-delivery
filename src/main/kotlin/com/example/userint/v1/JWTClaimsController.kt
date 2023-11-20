@@ -32,9 +32,6 @@ class JWTClaimsController {
     @Qualifier("jwtHeaderTokenExtractor")
     lateinit var tokenExtractor: ITokenExtractor
 
-    @Autowired
-    lateinit var messagingTemplate: SimpMessageSendingOperations
-
     @PreAuthorize("hasRole('USER')")
     @PostMapping("/create")
     fun createClaim(

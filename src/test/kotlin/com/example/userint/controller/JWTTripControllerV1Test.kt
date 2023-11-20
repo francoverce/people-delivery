@@ -109,7 +109,7 @@ class JWTTripControllerV1Test {
     @Test
     fun terminarViaje(){
         val closedTrip = ClosedTrip(
-            idViaje = idViaje,
+            viaje_id = idViaje,
             status = "FINISHED",
             finishTimestamp =  "19/11/2023, 16:55:27"
         )

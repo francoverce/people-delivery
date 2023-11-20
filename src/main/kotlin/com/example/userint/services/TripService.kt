@@ -222,7 +222,7 @@ class TripService {
 
     @Transactional
     fun closedTrip(event: ClosedTrip) {
-        tripRepository.findById(event.idViaje).let {
+        tripRepository.findById(event.viaje_id).let {
             tripRepository.save(
                 Trips(
                     id = it.get().id,
@@ -240,7 +240,7 @@ class TripService {
                 )
             )
         }
-        val novedad = "El viaje con ID ${event.idViaje} ha sido finalizado"
+        val novedad = "El viaje con ID ${event.viaje_id} ha sido finalizado"
         novedadService.enviarNovedadDesdeServicio( novedad)
     }
 

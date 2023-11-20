@@ -19,7 +19,7 @@ data class OnGoingTrip(
 )
 
 data class ClosedTrip(
-    val idViaje: Long,
+    val viaje_id: Long,
     val status: String,
     val finishTimestamp: String
 )
