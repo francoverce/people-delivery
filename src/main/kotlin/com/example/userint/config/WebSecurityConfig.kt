@@ -14,6 +14,7 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 import org.springframework.web.cors.CorsConfiguration
 import org.springframework.web.cors.CorsConfigurationSource
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource
+import java.util.*
 
 @EnableWebSecurity
 @Configuration
@@ -35,11 +36,11 @@ internal class WebSecurityConfig : WebSecurityConfigurerAdapter() {
                 "**/v1/register/**",
                 "**/v1/users/email/**",
                 "**/v1/users/validate/**",
+                "**/ws/**"
             ).authenticated()
             .anyRequest().permitAll().and()
             .exceptionHandling().authenticationEntryPoint(jwtAuthenticationEntryPoint).and()
             .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
-
         // disable page caching
         http.headers().cacheControl()
 
@@ -50,13 +51,11 @@ internal class WebSecurityConfig : WebSecurityConfigurerAdapter() {
     @Bean
     fun corsConfigurationSource(): CorsConfigurationSource {
         val configuration = CorsConfiguration()
-        configuration.allowedOrigins = listOf("*")
-        configuration.allowedMethods = listOf("GET", "POST", "PUT", "DELETE")
-        configuration.allowCredentials = false
+        configuration.setAllowedOrigins(Collections.singletonList("*"));
         configuration.allowedHeaders = listOf("*")
+        configuration.allowedMethods = listOf("GET", "POST", "PUT", "DELETE")
         val source = UrlBasedCorsConfigurationSource()
         source.registerCorsConfiguration("/**", configuration)
-        source.registerCorsConfiguration("/ws/**", configuration);
         return source
     }
 }

@@ -10,8 +10,8 @@ data class EventTrip (
 )
 
 data class MessageNewTrip(
-    val idViaje: String,
-    val idUsuario: String,
+    val idViaje: Long,
+    val idUsuario: Long,
     val nombre: String,
     val apellido: String,
     val date: String = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm")),

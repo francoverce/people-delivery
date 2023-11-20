@@ -41,9 +41,9 @@ class ReviewsService {
             ReviewNewEvent(
                 exchange = "new_review",
                 MessageReviewEvent(
-                    idUsuario = trip!!.userId.id.toString(),
-                    nombreUsuario = trip.userId.name!!,
-                    idChofer = trip.driverId!!.idChofer,
+                    idUsuario = trip!!.userId.id,
+                    nombreUsuario = trip!!.userId.name!!,
+                    idChofer = trip!!.driverId!!.idChofer.toLong(),
                     cantidadEstrellas = createReviewsRequest.rating,
                     idViaje = trip.id.toString(),
                 )

@@ -10,9 +10,9 @@ data class ReviewNewEvent (
 )
 
 data class MessageReviewEvent(
-    val idUsuario: String,
+    val idUsuario: Long,
     val nombreUsuario: String,
-    val idChofer: String,
+    val idChofer: Long,
     val cantidadEstrellas: Int,
     val idViaje: String,
     val fechaCalificacion: String = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm")),

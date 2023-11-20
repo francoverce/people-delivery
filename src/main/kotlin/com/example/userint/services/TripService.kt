@@ -33,7 +33,7 @@ class TripService {
     lateinit var coreClient: CoreClient
 
     @Autowired
-    lateinit var messagingTemplate: SimpMessageSendingOperations
+    lateinit var novedadService: NovedadService
 
     enum class Estado {
         SIMULADO,
@@ -80,8 +80,8 @@ class TripService {
                 EventTrip(
                     exchange = "new_trips",
                     message = MessageNewTrip(
-                        idViaje = trip.id.toString(),
-                        idUsuario = trip.userId.id.toString(),
+                        idViaje = trip.id,
+                        idUsuario = trip.userId.id,
                         nombre = it.name ?: "",
                         apellido = it.lastName ?: "",
                         date = trip.created_at.toString(),
@@ -191,7 +191,7 @@ class TripService {
             )
         }
         val novedad = "El viaje con ID ${event.idViaje} ha sido aceptado"
-        messagingTemplate.convertAndSend("/topic/novedad", novedad)
+        novedadService.enviarNovedadDesdeServicio( novedad)
     }
 
 
@@ -216,7 +216,7 @@ class TripService {
             )
         }
         val novedad = "El viaje con ID ${event.idViaje} ha sido inciado"
-        messagingTemplate.convertAndSend("/topic/novedad", novedad)
+        novedadService.enviarNovedadDesdeServicio( novedad)
     }
 
 
@@ -241,7 +241,7 @@ class TripService {
             )
         }
         val novedad = "El viaje con ID ${event.idViaje} ha sido finalizado"
-        messagingTemplate.convertAndSend("/topic/novedad", novedad)
+        novedadService.enviarNovedadDesdeServicio( novedad)
     }
 
     @Transactional

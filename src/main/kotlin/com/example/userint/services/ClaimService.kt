@@ -58,7 +58,7 @@ class ClaimService  {
                    message = NewTicket(
                        idTicket = claim.id,
                        idSolicitante = it.id,
-                       idReclamado = trip!!.driverId!!.idChofer,
+                       idReclamado = trip!!.driverId!!.idChofer.toLong(),
                        idViaje =  trip.id,
                        asunto = claim.title,
                        detalle = claim.description,

@@ -39,9 +39,8 @@ dependencies {
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("org.springframework.security:spring-security-test")
 
-    //SOCKET
     implementation("org.springframework.boot:spring-boot-starter-websocket")
-    implementation("org.springframework.boot:spring-boot-starter-web")
+    implementation("org.springframework:spring-messaging")
 }
 
 tasks.withType<KotlinCompile> {

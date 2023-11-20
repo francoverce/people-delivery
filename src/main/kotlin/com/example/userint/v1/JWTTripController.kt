@@ -85,19 +85,19 @@ class JWTTripController {
         return ResponseEntity(tripService.cancelTrip(code,status, userCode!!), HttpStatus.OK)
     }
 
-    @PostMapping("accepted/events")
-    fun acceptedTrip(
-        request: HttpServletRequest,
-        @RequestBody event: AcceptedTrip
-    ): ResponseEntity<Unit> {
-        return ResponseEntity(tripService.acceptedTrip(event), HttpStatus.OK) }
-
     @PostMapping("ongoing/events")
     fun ongoinTrip(
         request: HttpServletRequest,
         @RequestBody event: OnGoingTrip
     ): ResponseEntity<Unit> {
         return ResponseEntity(tripService.ongoinTrip(event), HttpStatus.OK)    }
+
+    @PostMapping("accepted/events")
+    fun acceptedTrip(
+        request: HttpServletRequest,
+        @RequestBody event: AcceptedTrip
+    ): ResponseEntity<Unit> {
+        return ResponseEntity(tripService.acceptedTrip(event), HttpStatus.OK) }
 
     @PostMapping("closed/events")
     fun closedTrip(

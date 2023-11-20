@@ -1,7 +1,6 @@
 package com.example.userint.domain.model
 
-import java.time.Instant
-import java.time.LocalDateTime // Assuming Java 8 or later for LocalDateTime
+import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 
 enum class Status {
@@ -24,7 +23,7 @@ data class EventNewTicket (
 data class NewTicket(
     val idTicket: Long,
     val idSolicitante: Long,
-    val idReclamado: String,
+    val idReclamado: Long,
     val idViaje: Long,
     val asunto: String,
     val detalle: String,
