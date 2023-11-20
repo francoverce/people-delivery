@@ -80,10 +80,11 @@ class TripService {
                 EventTrip(
                     exchange = "new_trips",
                     message = MessageNewTrip(
-                        idViaje = trip.id,
+                        idViaje = trip.id.toString(),
+                        idUsuario = trip.userId.id.toString(),
                         nombre = it.name ?: "",
                         apellido = it.lastName ?: "",
-                        date = trip.created_at,
+                        date = trip.created_at.toString(),
                         estadoViaje = Estado.BUSCANDO_CHOFER.name,
                         puntoPartida = trip.from!!,
                         puntoLlegada = trip.since,
@@ -193,7 +194,7 @@ class TripService {
         messagingTemplate.convertAndSend("/topic/novedad", novedad)
     }
 
-    
+
     @Transactional
     fun ongoinTrip(event: OnGoingTrip) {
         tripRepository.findById(event.idViaje.toLong()).let {

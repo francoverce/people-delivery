@@ -1,6 +1,8 @@
 package com.example.userint.domain.model
 
 import java.time.Instant
+import java.time.LocalDateTime
+import java.time.format.DateTimeFormatter
 
 data class EventTrip (
     val exchange:String,
@@ -8,10 +10,11 @@ data class EventTrip (
 )
 
 data class MessageNewTrip(
-    val idViaje: Long,
+    val idViaje: String,
+    val idUsuario: String,
     val nombre: String,
     val apellido: String,
-    val date: Instant,
+    val date: String = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm")),
     val estadoViaje: String,
     val puntoPartida: String,
     val puntoLlegada: String,
