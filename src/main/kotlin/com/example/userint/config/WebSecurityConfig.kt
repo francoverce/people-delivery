@@ -56,6 +56,7 @@ internal class WebSecurityConfig : WebSecurityConfigurerAdapter() {
         configuration.allowedHeaders = listOf("*")
         val source = UrlBasedCorsConfigurationSource()
         source.registerCorsConfiguration("/**", configuration)
+        source.registerCorsConfiguration("/ws/**", configuration);
         return source
     }
 }
