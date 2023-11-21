@@ -29,7 +29,7 @@ data class NewTicket(
     val detalle: String,
     val status: Status,
     val prioridad: Prioridad,
-    val timestampCreacion: String = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm")),
+    val timestampCreacion: String = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")),
     val tipoUsuario: TipoUsuario
 )
 
