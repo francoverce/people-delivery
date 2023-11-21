@@ -38,5 +38,5 @@ data class NewTicket(
 data class UpdateTicket(
     val idTicket: Long,
     val newStatus: String,
-    val timestampActualizacion: String
+    val timeStampActualizacion: String
 )
