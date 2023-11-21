@@ -150,24 +150,12 @@ class TripService {
 
     @Transactional
     fun acceptedTrip(event: AcceptedTrip) {
-        val epochWithDecimal: Double = event.date.toDouble()
-
-        // Crear Instant con la parte entera (segundos)
-        val instant: Instant = Instant.ofEpochSecond(epochWithDecimal.toLong())
-
-        // Ajustar nanosegundos con la parte decimal
-        val adjustedInstant: Instant = instant.plusNanos(((epochWithDecimal - instant.epochSecond.toDouble()) * 1_000_000_000).toLong())
-
-        // Convertir a LocalDateTime
-        val localDateTime: LocalDateTime = LocalDateTime.ofInstant(adjustedInstant, ZoneOffset.UTC)
-
-
         val driver =  driverRepository.save(Drivers(
             idChofer = event.idChofer,
             fullName = event.nombreChofer + " " + event.apellidoChofer,
             car = event.vehiculo,
             patent = event.patente,
-            dateCome = localDateTime,
+            dateCome = LocalDateTime.now(),
             icon = ""
         ))
 

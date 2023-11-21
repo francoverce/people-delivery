@@ -11,6 +11,7 @@ data class AcceptedTrip(
 )
 
 
+
 data class OnGoingTrip(
     val idViaje: Long,
     val idChofer: Long,
